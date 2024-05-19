@@ -1,0 +1,31 @@
+header {
+  width: 100%;
+  position: relative;
+  /* position: absolute; */
+  /* top: 14px; */
+  /* left: 41px; */
+}
+.siteLogo {
+  /* width: 100%; */
+  position: absolute;
+  top: 14.5px;
+  left: 41.5px;
+}
+.siteLogo img {
+  width: 50%;
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+}
+
+/* sp */
+@media screen and (max-width: 480px) {
+  .siteLogo {
+    top: 13px;
+    left: 12px;
+  }
+  .siteLogo img {
+    width: 76.6px;
+  }
+}
