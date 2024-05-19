@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-weight: normal;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+li {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+input, select {
+  outline: none;
+}
