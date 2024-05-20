@@ -42,7 +42,7 @@
         </section>
 
         <!-- cv -->
-        <img class="cvButton" src="./img/side_button.svg" alt="申し込みはこちら">
+        <!-- <img class="cvButton" src="./img/side_button.svg" alt="申し込みはこちら"> -->
 
         <!-- overview -->
         <section class="overviewSection">
@@ -289,7 +289,7 @@
                         ],
                         [
                             'time' => '14:20〜',
-                            'img' => './img/speaker/man6_icon_2x.png',
+                            'img' => './img/speaker/man7_icon_2x.png',
                             'text' => 'SNSを伸ばした先に見える世界',
                         ],
                         [
@@ -299,7 +299,7 @@
                         ],
                         [
                             'time' => '15:40〜',
-                            'img' => './img/speaker/man8_icon_2x.png',
+                            'img' => './img/speaker/man9_icon_2x.png',
                             'text' => 'エンジニアとして独立し、年収3000万円を超える方法',
                         ],
                         [
@@ -314,7 +314,7 @@
                         ],
                         [
                             'time' => 'MC',
-                            'img' => './img/speaker/man11_icon_2x.png',
+                            'img' => './img/speaker/man12_icon_2x.png',
                             'text' => '',
                         ],
                     ];
