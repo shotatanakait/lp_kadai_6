@@ -121,8 +121,9 @@
 .overviewSection {
   background-image: url(../img/overview_bg_2x.png);
   background-size: contain;
-  background-position: center;
+  background-position: 50% calc(50% - 100px);
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 /* section common */
