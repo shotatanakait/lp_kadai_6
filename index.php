@@ -330,10 +330,10 @@
                     <div class="timeScheduleItem itemIndex-<?php echo $index; ?>">
                         <div class="itemCardTag">
                             <img src="./img/item_tag.svg" alt="item card tag">
-                            <p class="itemCardTime"<?php if (empty($card['text'])) : ?>style="left:24px;"<?php endif; ?>><?php echo $card['time']; ?></p>
+                            <p class="itemCardTime"><?php echo $card['time']; ?></p>
                         </div>
-                        <div class="itemCard" <?php if (empty($card['text'])) :?>style="margin-bottom:17px;"<?php endif; ?>>
-                            <img width="130" src="<?php echo $card['img']; ?>" alt="item card img">
+                        <div class="itemCard">
+                            <img src="<?php echo $card['img']; ?>" alt="item card img">
                             <?php if (!empty($card['text'])) : ?>
                                 <div class="itemCardTextWrap">
                                     <p class="itemCardText"><?php echo $card['text']; ?></p>

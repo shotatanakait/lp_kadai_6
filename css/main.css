@@ -505,11 +505,32 @@
   letter-spacing: 0.8px;
   text-align: center;
 }
+.itemIndex-11 .itemCardTime {
+  left: 24px;
+}
 .itemCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.itemCard img {
+  width: 130px;
+}
+.itemIndex-6 .itemCard img {
+  width: 272px;
+  margin-top: 31px;
+}
+.itemIndex-8 .itemCard img {
+  width: 239.5px;
+  margin-top: 12px;
+}
+.itemIndex-11 .itemCard {
+  margin-bottom: 17px;
+}
+.itemIndex-11 .itemCard img {
+  width: 247px;
+  margin-top: 22px;
 }
 .itemCardTextWrap {
   display: flex;
@@ -901,7 +922,32 @@
   .itemCard {
     flex-direction: row-reverse;
     margin-right: 14px;
+    /* margin-bottom: 8px; */
+  }
+  .itemCard img {
+    width: 87px;
+  }
+  .itemIndex-6 .itemCardText {
+    padding-right: 0;
+  }
+  .itemIndex-6 .itemCard img {
+    width: 194px;
+    margin-top: 0;
+  }
+  .itemIndex-8 .itemCardText {
+    padding-right: 0;
+  }
+  .itemIndex-8 .itemCard img {
+    width: 161px;
+    margin-top: 0;
+  }
+  .itemIndex-11 .itemCard {
+    margin: 0;
     margin-bottom: 8px;
+  }
+  .itemIndex-11 .itemCard img {
+    width: 172px;
+    margin-top: 0px;
   }
   .itemCardTag {
     padding-top: 8px;
