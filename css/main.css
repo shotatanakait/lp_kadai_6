@@ -121,7 +121,7 @@
 .overviewSection {
   background-image: url(../img/overview_bg_2x.png);
   background-size: contain;
-  background-position: 50% calc(50% - 117px);
+  background-position: 50% calc(50% - 102px);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -166,7 +166,7 @@
 /* about */
 .aboutSection {
   padding-top: 38px;
-  padding-bottom: 160px;
+  padding-bottom: 166px;
 }
 .aboutTitle {
   font-weight: 700;
@@ -188,7 +188,7 @@
 
 /* summary */
 .summarySection {
-  padding-bottom: 80px;
+  padding-bottom: 38px;
 }
 .summaryTable {
   padding-top: 15px;
@@ -281,7 +281,7 @@
 /* contents */
 .contentsSection {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 77px;
   background-color: #FFF6DE;
 }
 .colorFDD35C {
@@ -422,8 +422,8 @@
   background-size: contain;
   background-position: 50% calc(50% - 117px);
   background-repeat: no-repeat;
-  padding-top: 25px;
-  padding-bottom: 53px;
+  padding-top: 27px;
+  padding-bottom: 37px;
   position: relative;
 }
 .exhibitorsSectionInner {
@@ -523,7 +523,7 @@
   width: 130px;
 }
 .itemIndex-6 .itemCard img {
-  width: 272px;
+  width: 280px;
   margin-top: 31px;
 }
 .itemIndex-8 .itemCard img {
@@ -557,11 +557,11 @@
 /* FAQ */
 .faqSection {
   background-image: url(../img/faq_bg_poly1_2x.png), url(../img/faq_bg_poly2_2x.png), url(../img/faq_bg_poly3_2x.png);
-  background-position: left bottom 46%, top 7% right 8%, top 32% right 1%;
+  background-position: left bottom 42%, top 7% right 8%, top 32% right 1%;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 7%, 14%, 5%;
   padding-top: 100px;
-  padding-bottom: 155px;
+  padding-bottom: 105px;
 }
 .faqSectionInner {
   max-width: 760px;
@@ -569,12 +569,12 @@
   padding-top: 74px;
 }
 .faqSectionItem {
-  margin-bottom: 42px;
+  margin-bottom: 43px;
 }
 .faqSectionItemInner {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
 }
 .faqSectionItemQuestion, .faqSectionItemAnswer {
   display: flex;
@@ -966,6 +966,11 @@
   .itemCardText {
     padding-top: 24px;
     font-size: 1.6rem;
+  }
+  .itemCardTime {
+    font-size: 1.4rem;
+    left: 8px;
+    top: 14px;
   }
 
   /* FAQ */
