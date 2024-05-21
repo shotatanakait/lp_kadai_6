@@ -78,7 +78,7 @@
                     </tr>
                     <tr>
                         <th class="summaryTableTh"><p>対象者</p></th>
-                        <td class="summaryTableTd">経営者 / フリーランス / <br>独立志望の会社員</td>
+                        <td class="summaryTableTd">経営者 / フリーランス / 独立志望の会社員</td>
                     </tr>
                     <tr>
                         <th class="summaryTableTh summaryTableThAccess"><p>アクセス</p></th>

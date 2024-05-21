@@ -121,7 +121,7 @@
 .overviewSection {
   background-image: url(../img/overview_bg_2x.png);
   background-size: contain;
-  background-position: 50% calc(50% - 100px);
+  background-position: 50% calc(50% - 117px);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -148,7 +148,7 @@
   content: '';
   display: inline-block;
   width: 30px;
-  height: 2px;
+  height: 1px;
   vertical-align: middle;
   background-color: #444545;
   margin-right: 20px;
@@ -157,7 +157,7 @@
   content: '';
   display: inline-block;
   width: 30px;
-  height: 2px;
+  height: 1px;
   vertical-align: middle;
   background-color: #444545;
   margin-left: 20px;
@@ -171,7 +171,7 @@
 .aboutTitle {
   font-weight: 700;
   font-size: 2.2rem;
-  line-height: 1.5;
+  line-height: 2;
   color: #444545;
   text-align: center;
   margin-top: 60px;
@@ -196,7 +196,8 @@
   margin: 0 auto;
 }
 .summaryTableTh {
-  padding: 35px 14px;
+  /* padding: 35px 14px; */
+  padding: 35px 0;
   border-bottom: 1px dotted #C4C4C4;
   vertical-align: top;
 }
@@ -210,6 +211,7 @@
   width: 170px;
   border: 2px solid #FDD35C;
   border-radius: 27.5px;
+  margin-right: 12px;
 }
 .summaryTableTd {
   font-weight: 700;
@@ -218,7 +220,7 @@
   color: #444545;
   padding-left: 5px;
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   border-bottom: 1px dotted #C4C4C4;
   vertical-align: middle;
 }
@@ -334,6 +336,7 @@
   line-height: 1;
   text-align: center;
   color: #FDD35C;
+  font-weight: 700;
 }
 .mainContentsItemText2.boothText {
   margin-top: -20px;
@@ -342,6 +345,7 @@
   font-style: italic;
   font-family: 'roboto', sans-serif;
   font-size: 4.8rem;
+  line-height: 1;
 }
 .mainContentsItemImg2 {
   text-align: center;
@@ -416,7 +420,7 @@
 .exhibitorsSection {
   background-image: url(../img/faq_bg_2x.png);
   background-size: contain;
-  background-position: center;
+  background-position: 50% calc(50% - 117px);
   background-repeat: no-repeat;
   padding-top: 25px;
   padding-bottom: 53px;
@@ -427,11 +431,12 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 0 90px;
   margin-top: 90px;
   margin-bottom: 90px;
 }
 .exhibitorsSectionInnerItem {
-  width: 480px;
+  width: 435px;
 }
 .exhibitorsCompany {
   font-size: 2rem;
@@ -621,6 +626,11 @@
   /* pick up */
   .pickupSectionItemText {
     width: calc(100% - 100px)
+  }
+
+  /* exhibitors */
+  .exhibitorsNoteWrapper {
+    right: 55px;
   }
 }
 
@@ -866,6 +876,7 @@
   .exhibitorsNoteWrapper {
     width: 100%;
     right: 55px;
+    bottom: 38px;
   }
   .exhibitorsNote {
     font-size: 1.2rem;
