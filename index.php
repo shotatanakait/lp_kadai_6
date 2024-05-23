@@ -42,7 +42,7 @@
         </section>
 
         <!-- cv -->
-        <!-- <img class="cvButton" src="./img/side_button.svg" alt="申し込みはこちら"> -->
+        <img class="cvButton" src="./img/side_button.svg" alt="申し込みはこちら">
 
         <!-- overview -->
         <section class="overviewSection">
@@ -59,26 +59,26 @@
                 <p class="sectionTitleJa">イベント開催概要</p>
                 <table class="summaryTable">
                     <tr>
-                        <th class="summaryTableTh"><p>開催日程</p></th>
+                        <th class="summaryTableTh summaryTableThDate"><p>開催日程</p></th>
                         <td class="summaryTableTd">
                             <p class="tdPc">2023年3月4日（土）開場10:00 閉場18:00（受付開始9:30-）</p>
                             <p class="tdSp">2023年3月4日（土）10:00〜18:00<br>（受付開始9:30-）</p>
                         </td>
                     </tr>
                     <tr>
-                        <th class="summaryTableTh"><p>会場</p></th>
+                        <th class="summaryTableTh summaryTableThPlace"><p>会場</p></th>
                         <td class="summaryTableTd">東京国際フォーラム ホールE2</td>
                     </tr>
                     <tr>
-                        <th class="summaryTableTh"><p>イベント内容</p></th>
-                        <td class="summaryTableTd">
+                        <th class="summaryTableTh summaryTableThEvent"><p>イベント内容</p></th>
+                        <td class="summaryTableTd summaryTableTdEvent">
                             企業ブース出展：60ブース<br>
                             ビジネス系セミナー：12枠
                         </td>
                     </tr>
                     <tr>
-                        <th class="summaryTableTh"><p>対象者</p></th>
-                        <td class="summaryTableTd">経営者 / フリーランス / 独立志望の会社員</td>
+                        <th class="summaryTableTh summaryTableThTarget"><p>対象者</p></th>
+                        <td class="summaryTableTd">経営者 / フリーランス / <br class="spBr">独立志望の会社員</td>
                     </tr>
                     <tr>
                         <th class="summaryTableTh summaryTableThAccess"><p>アクセス</p></th>
@@ -170,26 +170,56 @@
                 <h1 class="sectionTitleEn colorFDD35C">Pick Up</h1>
                 <p class="sectionTitleJa">注目の企業</p>
                 <div class="pickupSectionList">
-                    <div class="pickupSectionItem">
-                        <dt class="pickupSectionItemTitle"><img width="110.25" src="./img/company_icon1_2x.png" alt="オープラン株式会社"></dt>
-                        <dd class="pickupSectionItemText">オープラン株式会社は「ITサービス」を軸に「人」と「グローバル」に向き合い日本を代表する企業になるべく2015年に産声をあげたベンチャー企業です。<br><a href="https://oplan.co.jp/">https://oplan.co.jp/</a></dd>
-                    </div>
-                    <div class="pickupSectionItem">
-                        <dt class="pickupSectionItemTitle"><img width="223" src="./img/company_icon2_2x.png" alt="株式会社PE-BANK"></dt>
-                        <dd class="pickupSectionItemText">ITフリーランスの仕事探しなら【PE-BANK】へ。Web・SE系を中心に毎月1,000件以上のご紹介。</dd>
-                    </div>
-                    <div class="pickupSectionItem">
-                        <dt class="pickupSectionItemTitle"><img width="266.79" src="./img/company_icon3_2x.png" alt="BOCジャパン合同会社"></dt>
-                        <dd class="pickupSectionItemText">台湾の「食文化」の導入により、日本の飲食業をクリエイティブに。</dd>
-                    </div>
-                    <div class="pickupSectionItem">
-                        <dt class="pickupSectionItemTitle"><img width="124" src="./img/company_icon4_2x.png" alt="クリーヴァ株式会社"></dt>
-                        <dd class="pickupSectionItemText">月額制システム開発チームレンタルSucSak(サクサク)を運営している東京新宿のシステム開発会社です。<br><img width="95" src="./img/service_icon_2x.png" alt="sucsak">：<a href="https://sucsak.com/">https://sucsak.com/</a></dd>
-                    </div>
-                    <div class="pickupSectionItem noMarginBottom">
-                        <dt class="pickupSectionItemTitle"><img width="103" src="./img/company_icon5_2x.png" alt="株式会社カルテットコミュニケーションズ"></dt>
-                        <dd class="pickupSectionItemText">1000業種以上の圧倒的運用実績！リスティング、Facebook・TwitterなどのSNS広告もおまかせ。</dd>
-                    </div>
+                    <?php
+                        $pickupList = [
+                            [
+                                'name' => 'オープラン株式会社',
+                                'img' => './img/company_icon1_2x.png',
+                                'text' => 'オープラン株式会社は「ITサービス」を軸に「人」と「グローバル」に向き合い日本を代表する企業になるべく2015年に産声をあげたベンチャー企業です。',
+                                'link' => 'https://oplan.co.jp/',
+                            ],
+                            [
+                                'name' => '株式会社PE-BANK',
+                                'img' => './img/company_icon2_2x.png',
+                                'text' => 'ITフリーランスの仕事探しなら【PE-BANK】へ。Web・SE系を中心に毎月1,000件以上のご紹介。',
+                                'link' => '',
+                            ],
+                            [
+                                'name' => 'BOCジャパン合同会社',
+                                'img' => './img/company_icon3_2x.png',
+                                'text' => '台湾の「食文化」の導入により、日本の飲食業をクリエイティブに。',
+                                'link' => '',
+                            ],
+                            [
+                                'name' => 'クリーヴァ株式会社',
+                                'img' => './img/company_icon4_2x.png',
+                                'text' => '月額制システム開発チームレンタルSucSak(サクサク)を運営している東京新宿のシステム開発会社です。',
+                                'link' => 'https://sucsak.com/',
+                            ],
+                            [
+                                'name' => '株式会社カルテットコミュニケーションズ',
+                                'img' => './img/company_icon5_2x.png',
+                                'text' => '1000業種以上の圧倒的運用実績！リスティング、Facebook・TwitterなどのSNS',
+                            ]
+                        ];
+                    ?>
+                    <?php
+                        foreach ($pickupList as $key => $pickup) {
+                    ?>
+                        <div class="pickupSectionItem">
+                            <dt class="pickupSectionItemTitle"><img class="pickupItemIndex-<?php echo $key; ?>" src="<?php echo $pickup['img']; ?>" alt="<?php echo $pickup['name']; ?>"></dt>
+                            <dd class="pickupSectionItemText">
+                                <?php echo $pickup['text']; ?>
+                                <?php if ($key === 0) : ?>
+                                    <br><a href="https://oplan.co.jp/">https://oplan.co.jp/</a>
+                                <?php elseif ($key === 2) : ?>
+                                    <br><img width="95" src="./img/service_icon_2x.png" alt="sucsak">：<a href="https://sucsak.com/">https://sucsak.com/</a>
+                                <?php endif;?>
+                            </dd>
+                        </div>
+                    <?php
+                        }
+                    ?>
                 </div>
             </div>
             <div class="pickupSectionRight"></div>

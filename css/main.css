@@ -277,6 +277,9 @@
 .googleMapSp {
   display: none;
 }
+.spBr {
+  display: none;
+}
 
 /* contents */
 .contentsSection {
@@ -412,6 +415,21 @@
   line-height: 1.5;
   width: 668px;
 }
+.pickupItemIndex-0 {
+  width: 110px;
+}
+.pickupItemIndex-1 {
+  width: 223px;
+}
+.pickupItemIndex-2 {
+  width: 266.5px;
+}
+.pickupItemIndex-3 {
+  width: 124px;
+}
+.pickupItemIndex-4 {
+  width: 103px;
+}
 .noMarginBottom {
   margin-bottom: 0;
 }
@@ -542,7 +560,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 102px;
+  /* height: 102px; */
+  height: 95px;
 }
 .itemCardText {
   width: 100%;
@@ -643,7 +662,7 @@
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 79px;
-    padding-bottom: 83px;
+    padding-bottom: 84px;
   }
   .firstViewTitle {
     font-size: 1.6rem;
@@ -651,6 +670,9 @@
   }
   .firstViewLogo {
     margin: 0 44px;
+  }
+  .firstViewLogo img {
+    height: 145px;
   }
   .firstViewDymLogo {
     display: none;
@@ -670,11 +692,13 @@
     vertical-align: super;
   }
   .firstViewDymText img {
-    width: 50%;
+    /* width: 50%; */
+    width: 137px;
     margin-left: 8px;
   }
   .firstViewDate {
     font-size: 2.4rem;
+    letter-spacing: 0.1px;
   }
   .firstViewDate span {
     font-size: 1.8rem;
@@ -682,8 +706,9 @@
   .firstViewPlace {
     font-size: 1.6rem;
     height: auto;
-    margin: 8px 0 1px;
+    margin: 7px 0 1px;
     width: 100%;
+    letter-spacing: 0.3px;
   }
   .firstViewConversionBtnWrap {
     position: fixed;
@@ -702,8 +727,9 @@
     font-size: 1.9rem;
     padding-left: 24px;
     padding-right: 15px;
-    justify-content: center;
     width: 100%;
+    height: 54px;
+    letter-spacing: 1px;
   }
   .cvButton {
     display: none;
@@ -726,10 +752,10 @@
   /* about */
   .aboutSection {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
     background-image: url(../img/sp/about_bg_sp.svg);
     background-size: cover;
-    background-position: center;
+    background-position: 50% calc(50% - 35px);
     background-repeat: no-repeat;
   }
   .aboutTitle {
@@ -737,7 +763,7 @@
   }
   .aboutText {
     font-size: 1.6rem;
-    line-height: 2.2;
+    line-height: 2.3;
     margin-top: 28px;
     margin: 28px 48px 0;
   }
@@ -750,23 +776,26 @@
 
   /* summary */
   .summarySection {
-    padding-bottom: 42px;
+    padding-bottom: 39px;
     margin-right: 22px;
     margin-left: 22px;
   }
   .summaryTable {
     max-width: 100%;
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 14px;
+    padding-top: 22px;
   }
   .summaryTableTh {
-    padding: 10px 10px 10px 2px;
+    padding: 10px 10px 15px 0;
+    vertical-align: middle;
   }
   .summaryTableTh p {
     font-size: 1.5rem;
     width: 105px;
     padding-top: 0;
     padding-bottom: 0;
+    margin-right: 2px;
   }
   .summaryTableTd {
     font-size: 1.4rem;
@@ -779,13 +808,44 @@
   .summaryTableTd .tdSp {
     display: block;
   }
+  .summaryTableTh.summaryTableThDate {
+    padding-top: 5px;
+    padding-bottom: 30px;
+  }
+  .summaryTableTh.summaryTableThPlace {
+    padding-top: 7px;
+    padding-bottom: 12px;
+  }
+  .summaryTableTh.summaryTableThEvent {
+    padding-top: 5px;
+    padding-bottom: 26px;
+  }
+  .summaryTableTd.summaryTableTdEvent {
+    line-height: 1.8;
+  }
+  .summaryTableTh.summaryTableThTarget {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  .summaryTableTh.summaryTableThAccess {
+    vertical-align: top;
+    padding-top: 8px;
+    padding-bottom: 30px;
+  }
   .summaryTableTdAccessInner {
     flex-direction: column;
   }
   .summaryTableTdAccess ul {
     width: 100%;
   }
+  .summaryTableTdAccess li {
+    line-height: 1.4;
+  }
   .googleMapSp {
+    display: block;
+    margin: 0;
+  }
+  .spBr {
     display: block;
   }
 
@@ -799,25 +859,31 @@
   }
   .mainContentsList {
     flex-direction: column;
-    gap: 28px;
+    gap: 27px;
   }
   .mainContentsItemTitle {
     width: 100%;
     font-size: 1.8rem;
+    padding-top: 6px;
+    padding-bottom: 6px;
   }
   .mainContentsItemText {
     font-size: 1rem;
+    margin-top: 10px;
+  }
+  .mainContentsItemImg {
+    top: -6px;
   }
   .mainContentsItemImg img {
-    width: 178px;
-    height: 25px;
+    width: 174px;
+    /* height: 25px; */
   }
   .mainContentsItemImg2 {
-    margin-right: 36.5px;
-    margin-left: 36.5px;
+    margin: 13px 35px 14px;
   }
   .mainContentsItemText2 {
     font-size: 2.1rem;
+    margin-top: -7px;
   }
   .mainContentsItemText2 span {
     font-size: 3.7rem;
@@ -839,8 +905,7 @@
   }
   .pickupSectionInner {
     width: calc(100% - 20px);
-    margin-top: 40px;
-    margin-bottom: 55px;
+    margin: 40px 12px 55px;
   }
   .pickupSectionItem  {
     flex-direction: column;
@@ -855,6 +920,22 @@
     font-size: 1.4rem;
     padding-right: 9px;
     padding-left: 9px;
+    letter-spacing: 0.4px;
+  }
+  .pickupItemIndex-0 {
+    width: 74px;
+  }
+  .pickupItemIndex-1 {
+    width: 154px;
+  }
+  .pickupItemIndex-2 {
+    width: 177.5px;
+  }
+  .pickupItemIndex-3 {
+    width: 124px;
+  }
+  .pickupItemIndex-4 {
+    width: 100px;
   }
 
   /* about exhibitors */
@@ -889,6 +970,7 @@
   }
   .timeScheduleSectionInner {
     margin: 34px auto 0;
+    gap: 9px;
   }
   .timeScheduleItemMoreInfo {
     display: block;
@@ -963,14 +1045,17 @@
   .itemCardTag {
     padding-top: 8px;
   }
+  .itemCardTag img {
+    width: 83px;
+  }
   .itemCardText {
     padding-top: 24px;
     font-size: 1.6rem;
   }
   .itemCardTime {
     font-size: 1.4rem;
-    left: 8px;
-    top: 14px;
+    left: 6px;
+    top: 13px;
   }
 
   /* FAQ */
@@ -979,6 +1064,9 @@
     padding-top: 28px;
     padding-bottom: 120px;
     margin: 0 40px;
+  }
+  .faqSectionItem {
+    margin-bottom: 30px;
   }
   .faqSectionItem:last-of-type {
     margin-bottom: 0;
@@ -998,6 +1086,9 @@
   }
   .faqSectionItemQuestionText, .faqSectionItemAnswerText {
     font-size: 1.6rem;
+  }
+  .faqSectionItemInner {
+    gap: 14px;
   }
 }
 
