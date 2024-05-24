@@ -946,12 +946,9 @@
   }
   .exhibitorsSectionInner {
     margin: 33px calc((100% - 330px) / 2) 42px;
-    align-items: flex-start;
-    gap: 8px;
-    flex-wrap: nowrap;
   }
   .exhibitorsSectionInnerItem {
-    width: 50%;
+    width: 100%;
   }
   .exhibitorsCompany {
     font-size: 1.4rem;
